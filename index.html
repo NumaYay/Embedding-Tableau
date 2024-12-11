@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visuals by Numa</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <link rel="stylesheet" href="styles.css" />
+  <h1>Visuals by Numa</h1>
+  <div>
+    <i class="fas fa-star"></i> numa.begum@theinformationlab.co.uk
+
+    <button onclick="alert('Button clicked!')">Email Me</button>
+  </div>
+  <fieldset id="first_row_of_buttons">
+    <legend>Filters</legend>
+    <input
+      type="button"
+      value="Oregon and Washington Only"
+      id="oregon_and_washington"
+    />
+    <input type="button" value="Clear Filter" id="clear_filter" />
+    <input type="button" value="Undo" id="undo" />
+  </fieldset>
+  <body>
+    <h2>Discover visualisations built by Numa</h2>
+    <h3>hi</h3>
+    <p>hi</p>
+    <div class="content">
+      <script
+        type="module"
+        src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
+      ></script>
+
+      <tableau-viz
+        id="tableauViz"
+        src="https://public.tableau.com/views/Superstore_embedded_800x800/Overview"
+        toolbar="bottom"
+        hide-tabs
+      >
+      </tableau-viz>
+    </div>
+    <script
+      type="module"
+      src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
+    ></script>
+    <script src="ap.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </body>
+</html>
